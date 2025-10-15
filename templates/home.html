@@ -3,40 +3,61 @@
 
 <head>
     <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    <div id="container">
-        <h1>HireHub Careers!</h1>
-        <img id="banner" src="{{ url_for('static', filename='banner.jpg') }}" height="320" alt="Banner Image">
-        <h2>About HireHub!</h2>
-        <p class = "body-text">Welcome to HireHub, your premier destination for career
-            advancement and professional opportunities.
-            We specialize in connecting talented individuals with leading
-            organizations across diverse industries.
-            Our platform streamlines the hiring process,
-            offering a seamless experience for both job seekers and employers.
-            With thousands of verified job listings, personalized career guidance,
-            and cutting-edge recruitment solutions, HireHub stands at the forefront
-            of modern talent acquisition. We understand that finding the perfect job
-            or the ideal candidate requires more than just matching skills –
-            it's about creating meaningful professional relationships that drive success.
-            Our advanced matching algorithms, combined with expert human insight,
-            ensure that every connection made through HireHub is purposeful and promising.
-            Whether you're a fresh graduate taking your first career step
-            or an experienced professional seeking new challenges, HireHub provides
-            the tools, resources, and opportunities to help you achieve
-            your professional aspirations. Join our growing community of
-            success stories and discover why leading companies trust HireHub
-            for their recruitment needs.</p>
-        <h2>Open Position</h2>
-        <p class = "body-text">TODO - show the jobs here</p>
-        <div id="buttons">
-            <button>Contact Us</button>
-            <p>Copyright2025, HireHub</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center mb-4">
+                    <h1 class="display-4">HireHub Careers!</h1>
+                    <img class="img-fluid rounded shadow-lg my-4" src="{{ url_for('static', filename='banner.jpg') }}"
+                        alt="Banner Image">
+                </div>
+
+                <div class="card mb-4 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">About HireHub!</h2>
+                        <p class="card-text">Welcome to HireHub, your premier destination for career advancement and
+                            professional opportunities. We specialize in connecting talented individuals with leading
+                            organizations across diverse industries. Our platform streamlines the hiring process,
+                            offering a seamless experience for both job seekers and employers. With thousands of verified
+                            job listings, personalized career guidance, and cutting-edge recruitment solutions, HireHub
+                            stands at the forefront of modern talent acquisition. We understand that finding the
+                            perfect job or the ideal candidate requires more than just matching skills – it's about
+                            creating meaningful professional relationships that drive success. Our advanced matching
+                            algorithms, combined with expert human insight, ensure that every connection made through
+                            HireHub is purposeful and promising. Whether you're a fresh graduate taking your first
+                            career step or an experienced professional seeking new challenges, HireHub provides the
+                            tools, resources, and opportunities to help you achieve your professional aspirations.
+                            Join our growing community of success stories and discover why leading companies trust
+                            HireHub for their recruitment needs.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">Open Positions</h2>
+                        <p class="card-text">TODO - show the jobs here</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4">
+                    <button class="btn btn-primary btn-lg">Contact Us</button>
+                </div>
+
+                <footer class="text-center text-muted py-3">
+                    <p>Copyright 2025, HireHub</p>
+                </footer>
+            </div>
         </div>
     </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
