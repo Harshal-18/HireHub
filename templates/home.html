@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Welcome to the HireHub!</h1>
-        <p>Hello there, You'll learn about the job openings at HireHub.</p>
-    </body>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="container">
+        <h1>HireHub Careers!</h1>
+        <img id="banner" src="{{ url_for('static', filename='banner.jpg') }}" height="320" alt="Banner Image">
+        <h2>About HireHub!</h2>
+        <p class = "body-text">Welcome to HireHub, your premier destination for career
+            advancement and professional opportunities.
+            We specialize in connecting talented individuals with leading
+            organizations across diverse industries.
+            Our platform streamlines the hiring process,
+            offering a seamless experience for both job seekers and employers.
+            With thousands of verified job listings, personalized career guidance,
+            and cutting-edge recruitment solutions, HireHub stands at the forefront
+            of modern talent acquisition. We understand that finding the perfect job
+            or the ideal candidate requires more than just matching skills –
+            it's about creating meaningful professional relationships that drive success.
+            Our advanced matching algorithms, combined with expert human insight,
+            ensure that every connection made through HireHub is purposeful and promising.
+            Whether you're a fresh graduate taking your first career step
+            or an experienced professional seeking new challenges, HireHub provides
+            the tools, resources, and opportunities to help you achieve
+            your professional aspirations. Join our growing community of
+            success stories and discover why leading companies trust HireHub
+            for their recruitment needs.</p>
+        <h2>Open Position</h2>
+        <p class = "body-text">TODO - show the jobs here</p>
+        <div id="buttons">
+            <button>Contact Us</button>
+            <p>Copyright2025, HireHub</p>
+        </div>
+    </div>
+</body>
+
 </html>
